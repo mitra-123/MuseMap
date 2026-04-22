@@ -27,3 +27,8 @@ export async function getEdges(nodeId) {
     const res = await fetch(`${BASE_URL}/edges/${nodeId}`)
     return res.json()
 }
+
+export async function getSimilarNodes(nodeId) {
+    const res = await fetch(`${BASE_URL}/nodes/${nodeId}/similar`)
+    return res.json()
+}

@@ -4,6 +4,7 @@ CREATE TABLE IF NOT EXISTS Node (
     NodeType VARCHAR(50) NOT NULL CHECK(NodeType IN('image', 'text', 'link')),
     Tags TEXT,
     Content TEXT,
+    embedding TEXT,
     CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
